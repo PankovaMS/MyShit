@@ -1,0 +1,84 @@
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	a{
+		text-decoration: none;
+	}
+	a:link {
+		color: black; 
+	}
+	a:visited {
+		color: black; 
+	}
+	a:hover {
+		color: navy;
+	}
+	a:active {
+		color: white;
+	}
+	body {
+		background-color: rgba(240, 132, 132, 0.1);
+	}
+	.wrapper  > div {
+		box-sizing: border-box;
+	}
+	.navbar {
+		background: black;
+		width: 100%;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+
+	}
+	.navbar > input {
+		margin-left: 2%;
+		height: 60px;
+		width: 80%;
+		padding: 1%;
+		height: 60px;
+		background-color: #2e2e2e;
+		border: 0;
+		color: white;
+		font-size: 1.4em;
+	}
+	.navbar > input:focus {
+		background-color: white;
+		color: black;
+	}
+	.logo {
+		padding-left: 15px;
+		font-size: 1.6em;
+	}
+	.registration {
+		padding-left: 45px;
+		font-size: 1.4em;
+	}
+	.navbar > a {
+		
+		color: white;
+		display: inline;
+	}
+	.wrapper.div {
+		box-sizing: border-box;
+
+	}
+.wrapper.menu {
+	float: left;
+	width: 10%;
+	background-color: white;
+}
+
+div > p {
+	margin-bottom: 25px;
+	text-align: center;
+
+}
+.wrapper.input {
+
+		float: left;
+		padding-left: 40px;
+}
+.form {
+	margin-bottom: 10px; /*я не могу это нормально сдлать. Мне нужен отступ между полями и кнопкой */
+}
