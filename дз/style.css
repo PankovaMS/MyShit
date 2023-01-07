@@ -21,6 +21,7 @@
 	}
 	body {
 		background-color: rgba(240, 132, 132, 0.1);
+
 	}
 	.wrapper  > div {
 		box-sizing: border-box;
@@ -28,7 +29,6 @@
 	.head {
 		background: black;
 		width: 100%;
-		box-sizing: border-box;
 		-moz-box-sizing: border-box;
 	}
 	li {
@@ -60,6 +60,7 @@
 	.registration {
 		padding-left: 45px;
 		font-size: 1.4em;
+
 	}
 	.head > a {
 		
@@ -67,10 +68,11 @@
 		display: inline;
 	}
 	.wrapper.div {
+
 		box-sizing: border-box;
 
 	}
-.wrapper.menu {
+.wrapper.menu	{
 	margin-top: 0px;
 	width: 10%;
 	background-color: white;
