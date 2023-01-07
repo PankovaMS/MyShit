@@ -1,117 +1,84 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
+	* {
+		margin: 0;
+		padding: 0;
+	}
 
-a{
-	text-decoration: none;
-}
-a:link {
-	color: black; 
-}
-a:visited {
-	color: black; 
-}
-a:hover {
-	color: navy;
-}
-a:active {
-	color: white;
-}
-body {
-	background-color: rgba(240, 132, 132, 0.1);
+	a{
+		text-decoration: none;
+	}
+	a:link {
+		color: black; 
+	}
+	a:visited {
+		color: black; 
+	}
+	a:hover {
+		color: navy;
+	}
+	a:active {
+		color: white;
+	}
+	body {
+		background-color: rgba(240, 132, 132, 0.1);
+	}
+	.wrapper  > div {
+		box-sizing: border-box;
+	}
+	.navbar {
+		background: black;
+		width: 100%;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
 
-}
+	}
+	.navbar > input {
+		margin-left: 2%;
+		height: 60px;
+		width: 80%;
+		padding: 1%;
+		height: 60px;
+		background-color: #2e2e2e;
+		border: 0;
+		color: white;
+		font-size: 1.4em;
+	}
+	.navbar > input:focus {
+		background-color: white;
+		color: black;
+	}
+	.logo {
+		padding-left: 15px;
+		font-size: 1.6em;
+	}
+	.registration {
+		padding-left: 45px;
+		font-size: 1.4em;
+	}
+	.navbar > a {
+		
+		color: white;
+		display: inline;
+	}
+	.wrapper.div {
+		box-sizing: border-box;
 
-.head {
-	position: absolute;
-	background: black;
-	width: 100%;
-	-moz-box-sizing: border-box;
-
-}
-.head > input {
-	margin-left: 2%;
-	height: 60px;
-	width: 80%;
-	padding: 1%;
-	height: 60px;
-	background-color: #2e2e2e;
-	border: 0;
-	color: white;
-	font-size: 1.4em;
-}
-.wrapper.menu, .wrapper.input {
-	display: inline-block;
-	vertical-align: baseline;
-}
-.head > input:focus {
+	}
+.wrapper.menu {
+	float: left;
+	width: 10%;
 	background-color: white;
-	color: black;
-}
-.logo {
-	padding-left: 15px;
-	font-size: 1.6em;
-}
-.registration {
-	padding-left: 45px;
-	font-size: 1.4em;
-
-}
-.head > a {
-	
-	color: white;
-	display: inline;
-}
-.wrapper.div {
-
-	box-sizing: border-box;
-
-}
-.wrapper.menu	{
-margin-top: 55px;
-width: 10%;
-background-color: white;
 }
 
 div > p {
-margin-bottom: 15px;
-text-align: center;
+	margin-bottom: 25px;
+	text-align: center;
 
-}
-input:focus::placeholder {
-opacity: 0;
-}
-input {
-outline:none;
-}
-.form > p {
-
-margin-bottom: 15px;
 }
 .wrapper.input {
 
+		float: left;
+		padding-left: 40px;
 }
-
-.reg{
-
-font-size: 2em;
-}
-.form button {
-border: 10;
-border-color: #423434;
-padding: 0 10px;
-background-color: #7a6363;
-color: white;
-width: 100px;
-text-align: center;
-cursor: pointer;
-outline:none;
-}
-.sidebar {
-
-display: inline-block;
-overflow: auto; 
-padding: 20px;
+.form {
+	margin-bottom: 10px; /*я не могу это нормально сдлать. Мне нужен отступ между полями и кнопкой */
 }
