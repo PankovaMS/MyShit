@@ -11,40 +11,39 @@
 	<title>Document</title>
 </head>
 <header>
-	<nav class="navbar">
+	<div class="head">
 		<a href="#" class="logo">Company</a>
 		<input class="input" type="search" name="search" placeholder="Search"  >
 		<a href="#" class="registration">Sign In</a>
 
-	</nav>
+	</div>
 </header>
 <body>
-
+	<!-- Ваня Бондарев, [27.12.22 10:46]
+1. Пункт Home - липнет к хэдэру. Это нужно исправить+
+2. Есть смысл изменить header > nav на что-то другое, поскольку по факту это не навигация.-
+3. Зачем-то ты заверстала макет при помощи float, хотя мы обсуждали, что так делать не стоит. Будет лучше, если .wrapper.input и .wrapper.div будут inline-block. Вертикальное выравнивание можно сделать через свойство vertical-align. И флоатов никаких не понадобится
+4. Форма без лэйблов, а надо бы
+5. Кнопочку submit можно было и покрасивее оформить -->
 	<div class="wrapper div">
-		<div class="wrapper menu">
-			<p>
-				<a href="#">Home</a>
-			</p>
-			<p>
-				<a href="#">Photos</a>
-			</p>
-			<p>
-				<a href="#">Products</a>
+		<nav>
+			<ul class="sidebar">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Photos</a></li>
+				<li><a href="#">Products</a></li>
+				<li><a href="#">Donate</a></li>
+				<li><a href="#">About Us</a></li>
 
-			</p>
-			<p>
-				<a href="#">Donate</a>
-			</p>
-			<p>
-				<a href="#">About Us</a>
-			</p>
-		</div>
+			</ul>
+		</nav>
+		
 		<div class="wrapper input">
-			<p>Registration</p>
+			<p class="reg">Registration</p>
 			<form class="form">
-			<p><input type="email" maxlength="20" name="email" size="20"></p>
-			<p><input type="password" name="password" minlength="8" size=20></p>
-			<p><button>Submit</button></p>
+				<p><input type="email" maxlength="20" name="email" size="20" placeholder="email"></p>
+				<p><input type="password" name="password" minlength="8" size=20><label>password</label></p>
+				
+				<p><button type="submit">Sign Up</button></p>
 			</form>
 			
 		</div>
