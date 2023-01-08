@@ -46,7 +46,7 @@
 		font-size: 1.4em;
 	}
 	.wrapper.menu, .wrapper.input {
-		display: inline-block;
+		display: inline-block; //*тут фу*//
 		vertical-align: baseline;
 	}
 	.head > input:focus {
@@ -65,7 +65,7 @@
 	.head > a {
 		
 		color: white;
-		display: inline;
+		display: inline; //* тут фу*//
 	}
 	.wrapper.div {
 
@@ -117,7 +117,7 @@ input {
 }
 .sidebar {
 	
-	display: inline-block;
+	display: inline-block; //* тут тоже фу *//
 	overflow: auto; 
 	padding: 20px;
 }
