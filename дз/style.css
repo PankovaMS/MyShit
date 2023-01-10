@@ -45,6 +45,7 @@ li {
 	color: white;
 	font-size: 1.4em;
 }
+
 .wrapper.menu, .wrapper.input {
 	display: inline-block; //*тут фу*//
 	vertical-align: baseline;
@@ -67,11 +68,7 @@ li {
 	color: white;
 	display: inline; //* тут фу*//
 }
-.wrapper.div {
 
-	box-sizing: border-box;
-
-}
 .wrapper.menu	{
 margin-top: 0px;
 width: 10%;
@@ -104,20 +101,28 @@ margin-bottom: 15px;
 .reg {
 font-size: 2em;
 }
-.form button {
-border: 10;
-border-color: #423434;
-padding: 0 10px;
-background-color: #7a6363;
-color: white;
-width: 100px;
-text-align: center;
-cursor: pointer;
-outline:none;
-}
+
 .sidebar {
 
 display: inline-block; //* тут тоже фу *//
 overflow: auto; 
 padding: 20px;
+
+}
+
+#btn {
+	margin-left: 25px;
+	margin-top: 10px;
+	width: 80px;
+	text-align: center;
+	padding: 0 5px;
+	height: 40px;
+	background-color: #2e2e2e;
+	border: 10px;
+	border-color: black;
+	border-radius: 12%;
+	color: white;
+	font-size: 1.1em;
+	cursor: pointer;
+	outline:none;
 }
