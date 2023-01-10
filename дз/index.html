@@ -8,7 +8,7 @@
 <meta content='width' name='MobileOptimized'/>
 <meta content='yes' name='apple-mobile-web-app-capable'/> -->
 
-<title>Document</title>
+<title>Site</title>
 </head>
 <header>
 <div class="head">
@@ -45,16 +45,16 @@
 	</div>
 	<div class="wrapper input">
 		<p class="reg">Registration</p>
-		<form class="form" >
+		<form class="form" method="get" autocomplete="off">
 		<label>
-			<input type="email" maxlength="20" name="email" size="20" placeholder="enter your email">
+			<input name="name" type="email" maxlength="20" name="email" size="20" placeholder="Enter your email" tabindex="1" formmethod="get" required>
 		</label>
 		<label>
-			<input type="password" name="password" minlength="8" size=20 placeholder="enter your password">
+			<input type="password" name="password" minlength="8" size=20 placeholder="enter your password" tabindex="2" pattern="[a-zA-Z]{3,15}" required>
 		</label>
-		<label>
+		<p>
 			<button type="submit">Sign Up</button>
-		</label>
+		</p>
 		</form>
 		
 	</div>
