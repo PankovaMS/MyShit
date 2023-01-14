@@ -1,112 +1,105 @@
-	* {
+* {
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
 	}
 
-	a{
+a{
 		text-decoration: none;
 	}
-	a:link {
+a:link {
 		color: black; 
 	}
-	a:visited {
+a:visited {
 		color: black; 
 	}
-	a:hover {
-		color: navy;
+a:hover {
+		color: rgb(0, 0, 0);
+		font-size: 1.03rem;
 	}
-	a:active {
+a:active {
 		color: white;
 	}
-	body {
-		background-color: rgba(240, 132, 132, 0.1);
+input:focus::placeholder {
+		opacity: 0;
+	}
+input {
+		outline:none;
+	}
+body {
+		background-color: rgba(255, 255, 255, 0.91);
 
 	}
-	.wrapper  > div {
-		box-sizing: border-box;
-	}
-	.head {
+/*shapochka*/
+.head {
 		display: flex;
+		align-items: center;
 		justify-content: center;
 		background: black;
 		width: 100%;
-		-moz-box-sizing: border-box;
-	}
-	li {
+		position: relative;
+		}
+li {
 		list-style-type: none;
+		margin-bottom: 15px;
 	}
-	.head > input {
+/*poisk v header*/
+.head > input {
 		flex-grow: 1;
-		margin-left: 2%;
-		height: 60px;
-		width: 80%;
-		padding: 1%;
-		height: 60px;
+		margin: 5px;
+		padding: 10px;
 		background-color: #2e2e2e;
 		border: 0;
 		color: white;
 		font-size: 1.4em;
 	}
-	.wrapper.menu, .wrapper.input {
-		display: inline-block; //*тут фу*//
-		vertical-align: baseline;
+/*menu only*/
+.sidebar {
+	margin-top: 5px;
+	background-color: rgb(255, 255, 255);
+	width: 100px;
+	text-align: center;
+}
+/*bolshoe slovo registration*/
+.reg {
+	font-size: 2em;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*registration and inputs only*/
+.wrapper.input {
+	position: absolute;
+	right: 110px;
+	text-align: center;
+	
+}
+/*меню + регистрация*/
+.wrapper.content {
+		display: flex;
+		align-items: center;
+		top: 10px;
+		width: 500px;
+		position: relative;
 	}
-	.head > input:focus {
+/*чтобы поиск изменялся при фокусе*/
+.head > input:focus {
 		background-color: white;
 		color: black;
 	}
-	.logo {
-		
-		font-size: 1.6em;
-	}
-	.registration {
-		padding-left: 45px;
-		font-size: 1.4em;
+	
 
-	}
-	.head > a {
-		
+	/* links in header*/
+.head > a {
 		color: white;
-		display: inline; //* тут фу*//
+		font-size: 1.6em;
+		white-space: nowrap;
+		
 	}
-	.wrapper.div {
 
-		box-sizing: border-box;
-
-	}
-.wrapper.menu	{
-	margin-top: 0px;
-	width: 10%;
-	background-color: white;
-}
 li > a {
 	font-family: georgia;
-	padding: 15px;
-	font-size: 1em;
-	padding-top: 5px;
 }
-li {
-	margin-bottom: 15px;
-}
-div > p {
-	margin-bottom: 20px;
-	text-align: center;
-
-}
-input:focus::placeholder {
-	opacity: 0;
-}
-input {
-	outline:none;
-}
-.form > p {
-
-	margin-bottom: 15px;
-}
-.reg {
-	font-size: 2em;
-}
+/*knopochka*/
 .form button {
 	border: 10;
 	border-color: #423434;
@@ -117,10 +110,13 @@ input {
 	text-align: center;
 	cursor: pointer;
 	outline:none;
+	margin-top: 10px;
 }
-.sidebar {
-	
-	display: inline-block; //* тут тоже фу *//
-	overflow: auto; 
-	padding: 20px;
+/*privaty policy*/
+.priv_pol {
+	color: black;
+}
+.priv_pol:hover {
+	color: black;
+	font-size: 1rem;
 }

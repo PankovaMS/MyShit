@@ -1,68 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<meta charset="UTF-8">
-	<!--<meta name='viewport' content='width=device-width,initial-scale=1'/>
-<meta content='true' name='HandheldFriendly'/>
-<meta content='width' name='MobileOptimized'/>
-<meta content='yes' name='apple-mobile-web-app-capable'/> -->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta charset="UTF-8">
+		<!--<meta name='viewport' content='width=device-width,initial-scale=1'/>
+	<meta content='true' name='HandheldFriendly'/>
+	<meta content='width' name='MobileOptimized'/>
+	<meta content='yes' name='apple-mobile-web-app-capable'/> -->
 
-<title>Site</title>
+	<title>Document</title>
 </head>
 <header>
-<div class="head">
-	<a href="#" class="logo">Company</a>
-			<input class="input" type="search" name="search" placeholder="Search">
-		<a href="#" class="registration">Sign In</a>
-</div>
+	<div class="head">
+		<a href="#" class="logo">Company</a>
+				<input class="input" type="search" name="search" placeholder="Search">
+			<a href="#" class="registration">Sign In</a>
+	</div>
 </header>
 <body>
-<!--
-3. Зачем-то ты заверстала макет при помощи float, хотя мы обсуждали, что так делать не стоит. Будет лучше, если .wrapper.input и .wrapper.div будут inline-block. Вертикальное выравнивание можно сделать через свойство vertical-align. И флоатов никаких не понадобится
--->
-<div class="wrapper nav">
-	<div class="wrapper menu">
-		<nav>
-			<ul class="sidebar">
-				<li>
-					<a href="#">HOME</a>
-				</li>
-				<li>
-					<a href="#">PHOTOS</a>
-				</li>
-				<li>
-					<a href="#">PRODUCTS</a>
-				</li>
-				<li>
-					<a href="#">DONATE</a>
-				</li>
-				<li>
-					<a href="#">About Us</a>
-				</li>
-			</ul>
-		</nav>
-	</div>
-	<div class="wrapper input">
-		<form class="form" method="get" autocomplete="off">
+	<div class="wrapper content">
+				<ul class="sidebar">
+					<li>
+						<a href="#">HOME</a>
+					</li>
+					<li>
+						<a href="#">PHOTOS</a>
+					</li>
+					<li>
+						<a href="#">PRODUCTS</a>
+					</li>
+					<li>
+						<a href="#">DONATE</a>
+					</li>
+					<li>
+						<a href="#">About Us</a>
+					</li>
+				</ul>
+		<div class="wrapper input">
 			<p class="reg">Registration</p>
-			<label for="name">Login</label>
-		</br>
-			<input id="name" type="email" maxlength="20" name="email" size="20" placeholder="Enter your email" tabindex="1" formmethod="get" required>
-		</br>
-			<label for="pass">Password</label>
-		</br>
-			<input id="pass" type="password" name="password" minlength="8" size=20 placeholder="Enter your password" tabindex="2" pattern="[a-zA-Z]{3,15}" required>
-			<p>
-			<button id="btn" type="submit">Sign Up</button>
-		</p>
-	<label>
-		<input type="checkbox" name="check" checked required="required"> I agree with <a href="#" title="Kto najmet tot loh">Privacy Policy</a>
-	</label>	
-		</form>
-		
+				<form class="form" method="get" autocomplete="off">
+				<label for="name">Login</label>
+			</br>
+				<input id="name" type="email" maxlength="20" name="email" size="20" placeholder="Enter your email" tabindex="1" formmethod="get" required>
+			</br>
+				<label for="pass">Password</label>
+			</br>
+				<input id="pass" type="password" name="password" minlength="8" size=20 placeholder="Enter your password" tabindex="2" pattern="[a-zA-Z]{3,15}" required>
+				<p>
+				<button id="btn" type="submit">Sign Up</button>
+			</p>
+		<label>
+			<input type="checkbox" name="check" checked required="required"> I agree with <a href="#" class="priv_pol" title="Kto najmet tot loh">Privacy Policy</a>
+		</label>	
+			</form>
+			
+		</div>
 	</div>
-</div>
+	
 
 </body>
 </html>
